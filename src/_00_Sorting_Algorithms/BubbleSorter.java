@@ -3,6 +3,8 @@ package _00_Sorting_Algorithms;
 public class BubbleSorter extends Sorter{
 	public BubbleSorter() {
 		type = "Bubble";
+		BubbleSorter bubble = new BubbleSorter();
+		
 	}
 	
 	//1. Use the bubble sorting algorithm to sort the array.
@@ -10,6 +12,17 @@ public class BubbleSorter extends Sorter{
 	//   progress on the graph.
 	@Override
 	void sort(int[] array, SortingVisualizer display) {
+		boolean swapped = true;
+		while (swapped) {
+			swapped = false;
+		}
+		for (int i = 0; i < array.length-1; i++) {
+			if (array[i] > array[i+1]) {
+				int temp = array[i];
+				array[i] = array[i+1];
+				array[i+1] = temp;
+			}
+		}
 		display.updateDisplay();
 	}
 	
