@@ -3,7 +3,6 @@ package _00_Sorting_Algorithms;
 public class BubbleSorter extends Sorter{
 	public BubbleSorter() {
 		type = "Bubble";
-		BubbleSorter bubble = new BubbleSorter();
 		
 	}
 	
@@ -23,7 +22,6 @@ public class BubbleSorter extends Sorter{
 				array[i+1] = temp;
 			}
 		}
-		display.updateDisplay();
 	}
 	
 }
